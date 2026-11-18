@@ -1,0 +1,162 @@
+:root{
+    --bg-cream: #c9ac86;       
+    --bg-cream-light: #EDE4D8; 
+    --dark-forest: #232B20;    
+    --coffee-brown: #6C4830;   
+    --coffee-hover: #533623;   
+    --white-soft: #FAF7F2;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-cream);
+    color: var(--dark-forest);
+    line-height: 1.5;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: var(--bg-cream);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo img{
+    height: 90px;
+    width: auto;
+    display: block;
+}
+.navbar .nav{
+    display: flex;
+    gap: 32px;
+}
+.navbar .nav a {
+    color: var(--dark-forest);
+    font-size: 12.8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: color .3s;
+}
+.navbar .nav a:hover, .navbar .nav a:active{
+    color: var(--coffee-brown);
+}
+.order-online-btn a{
+    background: var(--coffee-brown);
+    padding: 0.7rem 1.4rem;
+    border-radius: 16px;
+    color: var(--white-soft);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+.order-online-btn a:hover{
+    background: var(--coffee-hover);
+}
+.hero{
+    width: 100%;             /* Membuat background gambar full selebar layar */
+    min-height: 80vh;        /* Tinggi kotak hero ke bawah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4.8rem 5%;        /* Padding atas-bawah 4rem, kiri-kanan 5% agar teks tidak terlalu mepet pinggir */
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(35, 43, 32, 0.45), rgba(35, 43, 32, 0.45)), 
+                url('https://i.pinimg.com/736x/58/6d/ce/586dce6b5877ce004033d781c6abec6a.jpg') center/cover no-repeat;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--white-soft);
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: var(--white-soft);
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: rgba(250, 247, 242, 0.9);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--coffee-brown);
+    color: var(--white-soft);
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--coffee-hover);
+    transform: translateY(-2px);
+}
+
+.scroll-down-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--dark-forest);
+    font-size: 1rem;
+    background-color: var(--white-soft);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    
+    animation: bounce 2s infinite;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-down-btn:hover {
+    background-color: var(--coffee-brown);
+    color: var(--white-soft);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-4px);
+    }
+}

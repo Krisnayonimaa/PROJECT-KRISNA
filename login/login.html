@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Loka Wear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="loginOverlay" id="login-overlay">
+        <div class="login-container">
+
+            <div class="login-left-banner">
+                <div class="banner-content">
+                    <span class="banner-tag">Eksklusif Member Lokal Wear</span>
+                    <h1>Selamat datang di Dunia Fashion Lokal Berkelanjutan</h1>
+                    <p>Temukan koleksi busana etnik modern dan nikmati kurasi gaya harian yang dirancang khusus untuk mendukung karyak perajin serta penjahit lokal nusantara.</p>
+                </div>
+            </div>
+
+            <div class="login-right-form">
+                <div class="form-header">
+                    <h2>Masuk Akun</h2>
+                    <p>Silahkan masukkan username dan password kamu untuk melanjutkan.</p>
+                </div>
+                <form class="loginForm" action="">
+                    <div class="input-group">
+                        <label for="#username">Username</label>
+                        <input type="text" id="username" placeholder="Masukkan username anda..." required autocomplete="off">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Masukkan password anda..." required>
+                    </div>
+
+                    <div class="error-msg" id="errorMessage"></div>
+                    <button type="submit" class="btn-login">Masuk ke Website</button>
+                </form>
+
+                <div class="login-hint">
+                    <small>Petunjuk Akses Portofolio : Username <b>lokauser</b> | Password <b>12345</b></small>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

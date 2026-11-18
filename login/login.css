@@ -1,0 +1,24 @@
+:root {
+    --bg-ivory: #F6F4F0;
+    --bg-sand: #EBE6DD;
+    --charcoal: #1E201E;
+    --terracotta: #8C5A3C;
+    --terracotta-hover: #6E452C;
+    --white-soft: #FFFFFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--bg-ivory);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+.loginOverlay
